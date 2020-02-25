@@ -1,6 +1,6 @@
-declare var require: any;
+declare var require: any
 require.config({
-    paths: {
-        "knockout": "libs/knockout",
-    }
-});
+  paths: {
+    knockout: 'libs/knockout'
+  }
+})

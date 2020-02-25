@@ -6,10 +6,16 @@
   "author": "Swedish-li",
   "license": "MIT",
   "scripts": {
-    "build": "tsc"
+    "build": "gulp build",
+    "start": "gulp",
+    "cleanJs": "gulp cleanJs"
   },
   "devDependencies": {
     "@types/knockout": "^3.4.67",
-    "typescript": "^3.8.2"
+    "typescript": "^3.8.2",
+    "browser-sync": "^2.26.7",
+    "gulp": "^4.0.2",
+    "gulp-clean": "^0.4.0",
+    "gulp-typescript": "^5.0.1"
   }
 }
