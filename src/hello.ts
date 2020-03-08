@@ -1,6 +1,6 @@
 import * as ko from 'knockout'
 
-class HelloViewModel {
+export default class HelloViewModel {
   language: KnockoutObservable<string>
   framework: KnockoutObservable<string>
 
@@ -9,5 +9,3 @@ class HelloViewModel {
     this.framework = ko.observable(framework)
   }
 }
-
-ko.applyBindings(new HelloViewModel('TypeScript', 'Knockout'))

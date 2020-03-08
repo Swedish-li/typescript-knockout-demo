@@ -1,24 +1,26 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8" />
-        <title>Hello Knockout!</title>
-    </head>
-    <body>
-        <p>
-            Hello from
-            <strong data-bind="text: language">todo</strong>
-            and
-            <strong data-bind="text: framework">todo</strong>!
-        </p>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Hello Knockout!</title>
+  </head>
+  <body>
+    <div id="hello">
+      <p>
+        Hello from
+        <strong data-bind="text: language">todo</strong>
+        and
+        <strong data-bind="text: framework">todo</strong>!
+      </p>
 
-        <p>Language: <input data-bind="value: language" /></p>
-        <p>Framework: <input data-bind="value: framework" /></p>
+      <p>Language: <input data-bind="value: language" /></p>
+      <p>Framework: <input data-bind="value: framework" /></p>
+    </div>
 
-        <script src="./libs//require.js"></script>
-        <script src="./dist/require-config.js"></script>
-        <script>
-            require(["dist/hello"]);
-        </script>
-    </body>
+    <script src="./libs/require.js"></script>
+    <script src="./dist/require-config.js"></script>
+    <script>
+      require(['dist/index'])
+    </script>
+  </body>
 </html>
