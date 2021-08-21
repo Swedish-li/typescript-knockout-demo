@@ -5,6 +5,7 @@
     "noImplicitAny": true,
     "module": "amd",
     "target": "es5",
+    "esModuleInterop": true,
     "rootDir": "./src/",
     "moduleResolution": "node",
     "lib": ["esnext", "dom"],
